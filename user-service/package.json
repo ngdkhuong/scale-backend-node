@@ -1,0 +1,39 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "user service with authentication, authorize, ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdkhuong/scale-backend-node.git"
+  },
+  "keywords": [
+    "scale-backend",
+    "nodejs",
+    "microservices",
+    "api"
+  ],
+  "author": "Khuong Nguyen Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngdkhuong/scale-backend-node/issues"
+  },
+  "homepage": "https://github.com/ngdkhuong/scale-backend-node#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  }
+}
