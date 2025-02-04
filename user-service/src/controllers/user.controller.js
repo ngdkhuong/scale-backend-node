@@ -47,3 +47,12 @@ export const getUserById = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+export const logoutUser = async (req, res) => {
+    try {
+        const user = await userService.logoutUser();
+        res.json({ user, message: "User logged out" });
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+}

@@ -9,5 +9,6 @@ router.post("/login", userController.loginUser);
 router.get("/profile", protect, userController.getUserProfile);
 router.put("/profile", protect, userController.updateUserProfile);
 router.get("/:userId", userController.getUserById); // New route for getting user by ID
+router.post("/:userId", protect, userController.logoutUser)
 
 export default router;

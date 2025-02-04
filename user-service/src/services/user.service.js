@@ -64,3 +64,11 @@ export const getUserById = async (userId) => {
   }
   return user;
 };
+
+export const logoutUser = async (userId, token) => {
+  const user = await User.findByIdAndUpdate(userId, { token: null }, { new: true });
+  if (!user) {
+    throw new Error("User not found");
+  }
+  return user;
+} 
