@@ -1,0 +1,40 @@
+{
+  "name": "order-service",
+  "version": "1.0.0",
+  "description": "order service api ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdkhuong/scale-backend-node.git"
+  },
+  "keywords": [
+    "order",
+    "service",
+    "ecommerce",
+    "microservices",
+    "nodejs"
+  ],
+  "author": "Khuong Nguyen Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngdkhuong/scale-backend-node/issues"
+  },
+  "homepage": "https://github.com/ngdkhuong/scale-backend-node#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.6"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  }
+}
