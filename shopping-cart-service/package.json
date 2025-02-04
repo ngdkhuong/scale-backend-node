@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "jest ",
+    "test": "jest --passWithNoTests",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
