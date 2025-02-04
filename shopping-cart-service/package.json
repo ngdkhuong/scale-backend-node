@@ -1,0 +1,40 @@
+{
+  "name": "shopping-cart-service",
+  "version": "1.0.0",
+  "description": "shopping cart service api ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest ",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdkhuong/scale-backend-node.git"
+  },
+  "keywords": [
+    "cart",
+    "service",
+    "microservices",
+    "nodejs",
+    "backend"
+  ],
+  "author": "Khuong Nguyen Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngdkhuong/scale-backend-node/issues"
+  },
+  "homepage": "https://github.com/ngdkhuong/scale-backend-node#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

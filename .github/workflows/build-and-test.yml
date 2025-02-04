@@ -18,7 +18,7 @@ jobs:
           [
             user-service,
             product-service,
-            # shopping-cart-service,
+            shopping-cart-service,
             # order-service,
             # payment-service,
             # notification-service,
