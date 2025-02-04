@@ -1,8 +1,8 @@
 
 import axios from "axios";
-import { PRODUCT_CATALOG_SERVICE_URL } from "../config/config.js";
+import { PRODUCT_SERVICE_URL } from "../config/config.js";
 
-console.log("PRODUCT_CATALOG_SERVICE_URL:", PRODUCT_CATALOG_SERVICE_URL);
+console.log("PRODUCT_SERVICE_URL:", PRODUCT_SERVICE_URL);
 
 export const productCatalogClient = {
   async getProduct(productId) {
@@ -12,7 +12,7 @@ export const productCatalogClient = {
       //   `Full URL: ${PRODUCT_CATALOG_SERVICE_URL}/products/${productId}`
       // );
       const response = await axios.get(
-        `${PRODUCT_CATALOG_SERVICE_URL}/products/${productId}`
+        `${PRODUCT_SERVICE_URL}/products/${productId}`
       );
       return response.data;
     } catch (error) {
