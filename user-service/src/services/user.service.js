@@ -1,5 +1,5 @@
-import User from "../models/userModel.js";
-import { hashPassword, comparePasswords } from "../utils/passwordUtils.js";
+import User from "../models/user.model.js";
+import { hashPassword, comparePasswords } from "../utils/password.utils.js";
 import jwt from "jsonwebtoken";
 
 export const registerUser = async (userData) => {
@@ -38,3 +38,29 @@ export const loginUser = async ({email, username, password}) => {
     user: { id: user._id, username: user.username, email: user.email },
   };
 }
+
+export const getUserProfile = async (userId) => {
+  const user = await User.findById(userId).select("-password");
+  if (!user) {
+    throw new Error("User not found");
+  }
+  return user;
+};
+
+export const updateUserProfile = async (userId, updateData) => {
+  const user = await User.findByIdAndUpdate(userId, updateData, {
+    new: true,
+  }).select("-password");
+  if (!user) {
+    throw new Error("User not found");
+  }
+  return user;
+};
+
+export const getUserById = async (userId) => {
+  const user = await User.findById(userId).select("-password");
+  if (!user) {
+    throw new Error("User not found");
+  }
+  return user;
+};
