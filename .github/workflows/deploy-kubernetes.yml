@@ -32,7 +32,9 @@ jobs:
         uses: azure/cli@v1
         with:
           azcliversion: "2.0.72"
-          inlineScript: "echo 'Authenticated to Kubernetes'"
+          inlineScript: 
+            az login --service-principal -u ${{ secrets.AZURE_APP_ID }} -p ${{ secrets.AZURE_PASSWORD }} --tenant ${{ secrets.AZURE_TENANT_ID }}
+            az aks get-credentials --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} --name ${{ secrets.AZURE_AKS_CLUSTER_NAME }}
 
       - name: Deploy to Kubernetes
         run: |
