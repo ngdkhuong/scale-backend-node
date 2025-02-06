@@ -1,0 +1,39 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "description": "notification service api ",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngdkhuong/scale-backend-node.git"
+  },
+  "keywords": [
+    "microservices",
+    "nodejs",
+    "notification",
+    "express"
+  ],
+  "author": "Khuong Nguyen Dang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngdkhuong/scale-backend-node/issues"
+  },
+  "homepage": "https://github.com/ngdkhuong/scale-backend-node#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.7",
+    "nodemailer": "^6.10.0",
+    "twilio": "^5.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  }
+}

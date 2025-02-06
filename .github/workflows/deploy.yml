@@ -17,7 +17,7 @@ jobs:
             shopping-cart-service,
             order-service,
             # payment-service,
-            # notification-service,
+            notification-service,
           ]
 
     steps:
